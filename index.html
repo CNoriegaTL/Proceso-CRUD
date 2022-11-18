@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <title>Formulario de invitados - CRUD</title>
+ <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+ <h1>Registro de Invitados</h1>
+ <p>Por favor registrar los invitados con la información solicitada para la fiesta de navidad.</p>
+
+ <fieldset>
+  <form id="formulario">
+   <input type="text" id="nombre" name="name" placeholder="Nombre del invitad@"> <br><br>
+   <input type="text" id="acomp" name="job" placeholder="N° de acompañantes"> <br><br>
+   <input type="text" id="alim" name="alim" placeholder="Tiene alguna restricción alimentaria?"> <br><br>
+   <input type="button" value="Enviar" id="btn" onclick="Enviar()">
+  </form>
+ </fieldset>
+
+ <br>
+ <div class="mensaje" id="mensaje"></div>
+ <br>
+
+ <fieldset>
+
+  <h1>Lista de invitados:</h1>
+
+  <table class="center" id="table">
+   <tr>
+    <td class="col">Nombre</td>
+    <td class="col">N° de acompañantes</td>
+    <td class="col">Restricción Alimentaria</td>
+    <td class="col">Acciones</td>
+   </tr>
+  </table>
+ </fieldset>
+
+ <script src="main.js"></script>
+
+</body>
+
+</html>
