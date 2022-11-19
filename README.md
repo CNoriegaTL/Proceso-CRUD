@@ -30,3 +30,12 @@ Proceso CRUD
 **ENTREGA A TIEMPO**
 
 - Entregar tu proyecto en el tiempo estipulado.
+
+
+Usando el proceso CRUD cree una aplicacion para registrar invitados para una fiesta, donde se tiene que indicar el:
+
+1) Nombre
+2) Acompañantes
+3) Indicar si tiene restriccion alimentarias.
+
+El formulario arrojara error si no se ingresan datos y dara mensajes de alerta cuando se ingresen, actualicen y eliminen datos.
