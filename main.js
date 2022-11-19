@@ -1,7 +1,8 @@
+// PROCESOS CRUD
+
 let row = null;
 
-
-function Enviar(){
+function Enviar(){ // FUNCION DE ENVIO MAPEADA CON ONCLICK EN HTML
  let ingresoDatos = traerDatos();
  let leerDatos = datosdeLocalStorage(ingresoDatos);
  if(ingresoDatos == false) {
@@ -35,7 +36,6 @@ function traerDatos() {
  }
 }
 
-
 // R - Read ("Leer")
 // DATOS DE LOCAL STORAGE
 function datosdeLocalStorage(ingresoDatos) {
@@ -54,9 +54,7 @@ let arr = [n1, a1 , r1];
 return arr;
 }
 
-
-
-// INSERTAR ACCIONES LUEGO DE INGRESAR DATOS EN LA TABLA
+// INSERTAR ACCIONES DE EDITAR Y ELIMINAR LUEGO DE INGRESAR DATOS EN LA TABLA
 function insertar(leerDatos) {
 let row = table.insertRow();
 row.insertCell(0).innerHTML = leerDatos[0];
@@ -66,7 +64,7 @@ row.insertCell(3).innerHTML = `<button onclick = edit(this)>Editar</button>
                               <button onclick = eliminar(this)>Eliminar</button>`;
 }
 
-// BOTON DE EDITAR
+// FUNCION Y BOTON DE EDITAR
 
 function edit(ed) {
  row = ed.parentElement.parentElement;
@@ -95,4 +93,3 @@ function eliminar(elim) {
  }
 
 }
-Footer
