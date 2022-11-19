@@ -11,13 +11,12 @@ function Enviar(){ // FUNCION DE ENVIO MAPEADA CON ONCLICK EN HTML
  else{
   if (row == null) {
    insertar(leerDatos);
-   mensaje.innerHTML = `<h3 style="color: green;">Registro realizado!</h3>`;
+   mensaje.innerHTML = `<h3 style="color: green;">Invitado registrado!</h3>`;
  } else {
   actualizar();
   mensaje.innerHTML = `<h3 style="color: green">Datos Actualizados!</h3>`;
  }
  }
- 
 document.getElementById("formulario").reset();
 }
 
