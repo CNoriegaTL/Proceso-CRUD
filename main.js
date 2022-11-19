@@ -1,5 +1,3 @@
-// PROCESOS CRUD
-
 let row = null;
 
 
@@ -97,3 +95,4 @@ function eliminar(elim) {
  }
 
 }
+Footer
